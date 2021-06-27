@@ -57,7 +57,8 @@ namespace ceph {
       if (client_info_mgr.cli_info_map.end() != i) {
 	*i->second = dmc::ClientInfo(pp->get_qos_res(),
 				     pp->get_qos_wgt(),
-				     pp->get_qos_lim());
+				     pp->get_qos_lim(),
+             dmc::ClientType(pp->get_qos_ctype()));
 	return i->second;
       } else {
 	dmc::ClientInfo *client_info = new dmc::ClientInfo(pp->get_qos_res(),
