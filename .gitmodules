@@ -1,57 +1,58 @@
 [submodule "ceph-object-corpus"]
 	path = ceph-object-corpus
-	url = https://github.com/ceph/ceph-object-corpus.git
+	url = https://gitee.com/iss2016302580263/ceph-object-corpus.git
 [submodule "src/civetweb"]
 	path = src/civetweb
-	url = https://github.com/ceph/civetweb
+	url = https://gitee.com/iss2016302580263/civetweb.git
 [submodule "src/erasure-code/jerasure/jerasure"]
 	path = src/erasure-code/jerasure/jerasure
-	url = https://github.com/ceph/jerasure.git
+	url = https://gitee.com/iss2016302580263/jerasure.git
 	branch = v2-ceph
 [submodule "src/erasure-code/jerasure/gf-complete"]
 	path = src/erasure-code/jerasure/gf-complete
-	url = https://github.com/ceph/gf-complete.git
+	url = https://gitee.com/iss2016302580263/gf-complete.git
 	branch = v3-ceph
 [submodule "src/rocksdb"]
 	path = src/rocksdb
-	url = https://github.com/ceph/rocksdb
+	url = https://gitee.com/iss2016302580263/rocksdb.git
 	ignore = dirty
 [submodule "ceph-erasure-code-corpus"]
 	path = ceph-erasure-code-corpus
-	url = https://github.com/ceph/ceph-erasure-code-corpus.git
+	url = https://gitee.com/iss2016302580263/ceph-erasure-code-corpus.git
 [submodule "src/googletest"]
 	path = src/googletest
-	url = https://github.com/ceph/googletest
+	url = https://gitee.com/iss2016302580263/googletest.git
 	branch = ceph-release-1.7.x
 [submodule "src/spdk"]
 	path = src/spdk
-	url = https://github.com/ceph/spdk.git
+	url = https://gitee.com/iss2016302580263/spdk.git
 [submodule "src/xxHash"]
 	path = src/xxHash
-	url = https://github.com/ceph/xxHash.git
+	url = https://gitee.com/iss2016302580263/xxHash.git
 [submodule "src/isa-l"]
 	path = src/isa-l
-	url = https://github.com/ceph/isa-l
+	url = https://gitee.com/iss2016302580263/isa-l.git
 [submodule "src/lua"]
 	path = src/lua
-	url = https://github.com/ceph/lua.git
+	url = https://gitee.com/iss2016302580263/lua.git
 	branch = lua-5.3-ceph
 	ignore = dirty
 [submodule "src/dpdk"]
 	path = src/dpdk
-	url = https://github.com/ceph/dpdk
+	url = https://gitee.com/iss2016302580263/dpdk.git
 [submodule "src/zstd"]
 	path = src/zstd
-	url = https://github.com/facebook/zstd
+	url = https://gitee.com/iss2016302580263/zstd.git
 [submodule "src/crypto/isa-l/isa-l_crypto"]
 	path = src/crypto/isa-l/isa-l_crypto
-	url = https://github.com/01org/isa-l_crypto
+	url = https://gitee.com/iss2016302580263/isa-l_crypto.git
 [submodule "src/blkin"]
 	path = src/blkin
-	url = https://github.com/ceph/blkin
+	url = https://gitee.com/iss2016302580263/blkin.git
 [submodule "src/rapidjson"]
 	path = src/rapidjson
-	url = https://github.com/ceph/rapidjson
+	url = https://gitee.com/iss2016302580263/rapidjson.git
 [submodule "src/r2b_fair"]
 	path = src/r2b_fair
 	url = https://gitee.com/iss2016302580263/r2b_fair.git
+	branch = swh
