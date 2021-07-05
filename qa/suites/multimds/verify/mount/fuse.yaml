@@ -1,1 +1,2 @@
-../../../../cephfs/mount/fuse.yaml
+tasks:
+  - ceph-fuse:

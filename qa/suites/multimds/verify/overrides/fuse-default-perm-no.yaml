@@ -1,1 +1,5 @@
-../../../../cephfs/overrides/fuse/default-perm/no.yaml
+overrides:
+  ceph:
+    conf:
+      client:
+        fuse default permissions: false

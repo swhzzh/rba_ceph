@@ -1,1 +1,11 @@
-../../../fs/thrash/tasks/cfuse_workunit_suites_pjd.yaml
+overrides:
+  ceph:
+    conf:
+      client:
+        fuse set user groups: true
+        fuse default permissions: false
+tasks:
+- workunit:
+    clients:
+      all:
+        - suites/pjd.sh

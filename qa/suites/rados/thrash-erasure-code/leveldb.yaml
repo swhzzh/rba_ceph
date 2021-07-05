@@ -1,1 +1,5 @@
-../../../mon_kv_backend/leveldb.yaml
+overrides:
+  ceph:
+    conf:
+      mon:
+        mon keyvaluedb: leveldb

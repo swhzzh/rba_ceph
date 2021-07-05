@@ -1,1 +1,7 @@
-../../../../cephfs/mount/kclient.yaml
+overrides:
+  ceph:
+    conf:
+      global:
+        ms die on skipped message: false
+tasks:
+- kclient:

@@ -1,1 +1,3 @@
-../../../../cephfs/overrides/log-config.yaml
+log-rotate:
+  ceph-mds: 10G
+  ceph-osd: 10G

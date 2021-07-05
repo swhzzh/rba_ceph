@@ -1,1 +1,9 @@
-../../jewel-x/stress-split/5-finish-upgrade.yaml
+tasks:
+- install.upgrade:
+    osd.3:
+    client.0:
+- ceph.restart:
+    daemons: [osd.3, osd.4, osd.5]
+    wait-for-healthy: false
+    wait-for-osds-up: true
+

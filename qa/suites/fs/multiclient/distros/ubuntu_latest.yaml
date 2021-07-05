@@ -1,1 +1,2 @@
-../../../../distros/supported/ubuntu_latest.yaml
+os_type: ubuntu
+os_version: "16.04"

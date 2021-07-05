@@ -1,1 +1,5 @@
-../../../../cephfs/overrides/osd-asserts.yaml
+overrides:
+  ceph:
+    conf:
+      osd:
+        osd shutdown pgref assert: true

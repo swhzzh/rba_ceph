@@ -1,1 +1,2 @@
-../all/centos_7.4.yaml
+os_type: centos
+os_version: "7.4"

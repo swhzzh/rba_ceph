@@ -1,1 +1,3 @@
-../../../cephfs/begin.yaml
+tasks:
+  - install:
+  - ceph:

@@ -1,1 +1,3 @@
-../thrash/ceph.yaml
+tasks:
+- install:
+- ceph:

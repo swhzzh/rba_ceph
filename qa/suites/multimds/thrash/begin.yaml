@@ -1,1 +1,3 @@
-../../fs/thrash/begin.yaml
+tasks:
+  - install:
+  - ceph:

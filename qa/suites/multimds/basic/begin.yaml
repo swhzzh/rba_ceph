@@ -1,1 +1,3 @@
-../../fs/basic_workload/begin.yaml
+tasks:
+  - install:
+  - ceph:

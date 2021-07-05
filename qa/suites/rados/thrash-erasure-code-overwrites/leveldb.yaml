@@ -1,1 +1,5 @@
-../thrash-erasure-code/leveldb.yaml
+overrides:
+  ceph:
+    conf:
+      mon:
+        mon keyvaluedb: leveldb

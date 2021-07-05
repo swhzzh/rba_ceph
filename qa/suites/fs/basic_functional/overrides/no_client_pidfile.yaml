@@ -1,1 +1,5 @@
-../../../../overrides/no_client_pidfile.yaml
+overrides:
+  ceph:
+    conf:
+      client:
+        pid file: ""
