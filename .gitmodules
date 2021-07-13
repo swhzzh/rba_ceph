@@ -40,6 +40,7 @@
 [submodule "src/dpdk"]
 	path = src/dpdk
 	url = https://gitee.com/iss2016302580263/dpdk.git
+	branch = swh
 [submodule "src/zstd"]
 	path = src/zstd
 	url = https://gitee.com/iss2016302580263/zstd.git
@@ -52,6 +53,7 @@
 [submodule "src/rapidjson"]
 	path = src/rapidjson
 	url = https://gitee.com/iss2016302580263/rapidjson.git
+	branch = swh
 [submodule "src/r2b_fair"]
 	path = src/r2b_fair
 	url = https://gitee.com/iss2016302580263/r2b_fair.git
