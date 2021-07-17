@@ -45,6 +45,7 @@ namespace ceph {
       crimson::dmclock::ClientInfo peering_event;
 
       crimson::dmclock::ClientInfo pool_default;
+      crimson::dmclock::ClientInfo pool_noexist;
 
       static constexpr std::size_t rep_op_msg_bitset_size = 128;
       std::bitset<rep_op_msg_bitset_size> rep_op_msg_bitset;
@@ -109,6 +110,9 @@ namespace ceph {
       Mutex& get_lock() const { return lock; };
       inline const crimson::dmclock::ClientInfo* get_pool_default() {
 	return &pool_default;
+      };
+      inline const crimson::dmclock::ClientInfo* get_pool_noexist() {
+	return &pool_noexist;
       };
     }; // OpClassClientInfoMgr
   } // namespace mclock

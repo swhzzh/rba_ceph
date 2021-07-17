@@ -50,6 +50,7 @@ namespace ceph {
 		   cct->_conf->get_val<double>("osd_pool_default_mclock_wgt"),
 		   cct->_conf->get_val<double>("osd_pool_default_mclock_lim"),
 		   dmc::ClientType(cct->_conf->get_val<int64_t>("osd_pool_default_mclock_ctype"))),
+      pool_noexist(0, 0, 0, dmc::ClientType(2)),
       lock("OpClassClientInfoMgr::lock")
     {
       constexpr int rep_ops[] = {

@@ -49,7 +49,7 @@ namespace ceph {
       OSDMapRef osdmap = service->get_osdmap();
       const pg_pool_t* pp = osdmap->get_pg_pool(client.first);
       if (!pp) {
-	return client_info_mgr.get_pool_default();
+	return client_info_mgr.get_pool_noexist();
       }
 
       Mutex::Locker l(client_info_mgr.get_lock());
