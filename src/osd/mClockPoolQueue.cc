@@ -55,11 +55,14 @@ namespace ceph {
       Mutex::Locker l(client_info_mgr.get_lock());
       auto i = client_info_mgr.cli_info_map.find(client.first);
       if (client_info_mgr.cli_info_map.end() != i) {
-	*i->second = dmc::ClientInfo(pp->get_qos_res(),
-				     pp->get_qos_wgt(),
-				     pp->get_qos_lim(),
+	if(i->second->reservation != pp->get_qos_res() || i->second->weight != pp->get_qos_wgt() ||  i->second->limit != pp->get_qos_lim() ||  i->second->client_type != dmc::ClientType(pp->get_qos_ctype())){
+	
+	client_info_mgr.cli_info_map[client.first] = new dmc::ClientInfo(pp->get_qos_res(),
+                                     pp->get_qos_wgt(),
+                                     pp->get_qos_lim(),
              dmc::ClientType(pp->get_qos_ctype()));
-	return i->second;
+	}
+	return client_info_mgr.cli_info_map[client.first];
       } else {
 	dmc::ClientInfo *client_info = new dmc::ClientInfo(pp->get_qos_res(),
 							   pp->get_qos_wgt(),
